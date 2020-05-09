@@ -1,0 +1,34 @@
+- Possible Algorithms:
+
+    - Linear Models:
+        - Linear Regression: try to minimize RSS, but doesn't make diffs between vars
+        - Ridge Regression: gives bias to important features, is used to prevent multicollinearity (used in overfitting for regularization)
+        - Lasso:it is even more radical than ridge, as it selects just 1 between 2 corr features (used in overfitting for regularization)
+        - Elastic-net: it performos both, ridge and lasso and works better for big datasets
+        - LARS: it is similar to lasso, however instead of eliminating (mean 0) the 2nd corr variable, it mix both and measure its importance together
+        - Bayesian Ridge: it gives an alternative point of view to the linear model based in the bayesian probability (normally is for big datasets)
+        - Robust Regression: if there are many outliers
+        - Polynomial feature: if there is underfitting, we should apply to linear regression
+
+    - Kernel Ridge Regression: the main calculus behind it is based in the ridge regression, however it perfoms better i big datsets
+
+    - Support Vector Regression: SVR, as a big difference with the previous models, this model uses vectors, and it tries to find the best prediction by accepting a gived error range
+
+    - Stochastic Gradient Descent Regression: it tries to find the minimal error by selecting x when y is in its min value. And as stochastic means random, what is does is to select a random dot between that range
+
+    - K/Radious Nearest Neighbors: the label assigned to a query point is computed based on the mean of the labels of its nearest neighbors
+
+    - Gaussian Process Regression: non-parametric Bayesian approach towards regression problems that can be utilized in exploration and exploitation scenarios
+
+    - Decsion Trees Regression: are used to separate the dataset into classes belonging to the response variable
+    - Ensemble Methods: the goal of ensemble methods is to combine the predictions of several base estimators built with a given learning algorithm in order to improve generalizability / robustness over a single estimator:
+        - BaggingRegressor
+        - RandomForestRegressor 
+        - ExtraTreesRegressor
+        - AdaBoostRegressor
+        - HistGradientBoostingRegressor: still experimental, but it perfomrs faster than below algo in >10k datasets 
+        - GradientBoostingRegressor
+        - VotingRegressor: this model is used to make an avg of the best performing methods. For instance; if we select rForest, eTrees and other more we will use Voting Regressor to make the avg
+        - StackingRegressor: it is used to combine estimators, so it needs another regressor as an input
+
+    - Isotonic Regression: this model finds the best least squares fit to a set of points, given the constraint that the fit must be a non-decreasing function

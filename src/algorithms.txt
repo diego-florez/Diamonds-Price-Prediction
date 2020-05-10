@@ -21,6 +21,7 @@
     - Gaussian Process Regression: non-parametric Bayesian approach towards regression problems that can be utilized in exploration and exploitation scenarios
 
     - Decsion Trees Regression: are used to separate the dataset into classes belonging to the response variable
+    
     - Ensemble Methods: the goal of ensemble methods is to combine the predictions of several base estimators built with a given learning algorithm in order to improve generalizability / robustness over a single estimator:
         - BaggingRegressor
         - RandomForestRegressor 

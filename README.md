@@ -14,10 +14,10 @@ The goal of the project is to predict the price of diamonds based in its carat, 
 # 3 Steps:
 To fulfil the previous goals the next steps have been done:
 
-INPUT (2 datasets from Kaggle (1 to train, 1 to test))
-src (additional info as diamond images, diamond variables schema and possible models to implement)
-main (the 5 notebooks explained previously)
-OUTPUT (the predicted price of the diamonds of the best models)
+- INPUT (2 datasets from Kaggle (1 to train, 1 to test))
+- src (additional info as diamond images, diamond variables schema and possible models to implement)
+- main (the 5 notebooks explained previously)
+- OUTPUT (the predicted price of the diamonds of the best models)
 
 # 4 Final Output:
 The final output are the predicted prices of the best models. The best score (in rmse) was achieved with an Extra Trees Model, with a previous dummy encoding (one hot encoding). The score was: rmse = 532.01097
